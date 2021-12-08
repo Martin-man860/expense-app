@@ -1,8 +1,7 @@
 import { createStore } from "redux";
-import expenseReducers from "../reducers/expenseReducers";
+import expenseReducers from "../reducers/expenseReducer";
 
-// import UserReducer from './reducers/UserReducer' 
-// import userReducer from "../reducers/UserReducer";
+
 
 
 const Store = createStore(expenseReducers)

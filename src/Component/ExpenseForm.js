@@ -39,24 +39,24 @@ function ExpenseForm(props) {
             <Form onSubmit={(e)=>handleSubmit(e)}>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridEmail">
-                  <Form.Label>Name</Form.Label>
+                  <Form.Label>Name :</Form.Label>
                   <Form.Control type="text" placeholder="Enter Name Here" name="name" value={name} onChange={(e)=> setName(e.target.value)} />
                 </Form.Group>
               </Row>
-    
+    <br/>
               <Form.Group className="mb-3" controlId="formGridAddress1">
-                <Form.Label>Date Purchased</Form.Label>
+                <Form.Label>Date Purchased :</Form.Label>
                 <Form.Control type="date" placeholder="Date Here"  name="date" value={date} onChange={(e)=> setDate(e.target.value)} />
               </Form.Group>
-    
+    <br/>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridCity">
-                  <Form.Label>Amount(GH$)</Form.Label>
+                  <Form.Label>Amount(GH$) :</Form.Label>
                   <Form.Control type="number" placeholder="Amount Here"  name="amount" value={amount} onChange={(e)=> setAmount(e.target.value)} />
                 </Form.Group>
-    
+    <br/>
                 <Form.Group as={Col} controlId="formGridState">
-                  <Form.Label>Category</Form.Label>
+                  <Form.Label>Category :</Form.Label>
                   <Form.Select defaultValue="Food and Drinks" value={category} onChange={(e)=> setCategory(e.target.value)} >
                     <option>Food and Drinks</option>
                     <option>Accomdation</option>
@@ -66,8 +66,8 @@ function ExpenseForm(props) {
                   </Form.Select>
                 </Form.Group>
               </Row>
-    
-              <Button variant="primary" type="submit">
+    <br/>
+              <Button className="add" type="submit">
                 Add Expenses
               </Button>
             </Form>

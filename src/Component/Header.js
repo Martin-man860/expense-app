@@ -7,16 +7,13 @@ function Header(props) {
 
   return (
     <div>
-      <Container>
+      <Container class="header">
       <Navbar bg="danger" variant="dark">
           <Container>
             <Navbar.Brand>Expenses</Navbar.Brand>
           </Container>
         </Navbar>
-        <br />
-
-     
-        
+        <br />  
       </Container>
     </div>
   );

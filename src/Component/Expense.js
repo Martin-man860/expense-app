@@ -27,11 +27,11 @@ function toggleModal() {
       <h3>Amount: {expense.amount}</h3>
       <h3>Category: {expense.category}</h3>
 
-      <Button variant="primary" onClick={() => toggleModal()}>
+      <Button variant="edit" onClick={() => toggleModal()}>
         Edit
       </Button>
       
-      <Button variant="danger" onClick={()=> props.deleteExpense(expense.id)}>
+      <Button variant="delete" onClick={()=> props.deleteExpense(expense.id)}>
         Delete
       </Button>
 
